@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1 WELCOME TO MY PS3!!
+    p (b) String from GET request is: #{title}
+    // The line above will render HTML on the local server but not on the postman POST request
+    p (c) Length of string "#{title2}" is: #{title3}
+    // The line above will render HTML in Postman but not on the local server
