@@ -1,0 +1,21 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+
+<div>
+
+  <ul>
+    <li *ngFor="let city of weather">
+      <label (click)="selectCity(city)">{{city.name}}</label>
+    </li>
+  </ul>
+
+</div>
+
+<div *ng>
+  <!-- Display weather data for selected city -->
+  <h3>Details for {{selectedCity.name}} </h3>
+  <input type="text" [(ngModel)]="selectedCity.name">
+</div>
